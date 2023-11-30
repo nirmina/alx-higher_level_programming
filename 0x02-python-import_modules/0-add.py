@@ -3,7 +3,4 @@ if __name__ == "__main__":
     from add_0 import add
     a = 1
     b = 2
-    res = add(1, 2)
-    print("{} + {} = {}".format(a, b, res))
-else:
-    print("its been imported as a module")
+    print("{} + {} = {}".format(a, b, add(a, b))
