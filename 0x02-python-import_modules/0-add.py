@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 def add(a, b):
     res = a + b
-    print(a, "+",b ,"=" ,res)
     return(res)
 if __name__ == "__main__":
-    add(1, 2)
+    from add_0 import add
+    a = 1
+    b = 2
+    res = add(1, 2)
+    print("{} + {} = {}".format(a, b, res))
 else:
-    print("you need to import")
+    print("its been imported as a module")
